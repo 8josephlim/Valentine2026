@@ -58,24 +58,19 @@ window.addEventListener('DOMContentLoaded', () => {
     // Validate configuration first
     validateConfig();
 if (config.mj && config.mj.enabled) {
-    [1, 2, 3].forEach(num => {
-        const img = document.getElementById(`questionImage${num}`);
-        if (!img) return;
+  [1, 2, 3].forEach((num) => {
+    const img = document.getElementById(`questionImage${num}`);
+    if (!img) return;
 
-        if (num === 3 && config.mj.finalSrc) {
-            img.src = config.mj.finalSrc;
-            img.alt = config.mj.alt || "";
-            img.style.width = config.mj.width || "250px";
-            img.style.borderRadius = config.mj.borderRadius || "16px";
-            img.classList.remove("hidden");
-        } else if (config.mj.defaultSrc) {
-            img.src = config.mj.defaultSrc;
-            img.alt = config.mj.alt || "";
-            img.style.width = config.mj.width || "250px";
-            img.style.borderRadius = config.mj.borderRadius || "16px";
-            img.classList.remove("hidden");
-        }
-    });
+    const srcToUse = (num === 3) ? config.mj.finalSrc : config.mj.defaultSrc;
+    if (!srcToUse) return;
+
+    img.src = srcToUse;
+    img.alt = config.mj.alt || "";
+    img.style.width = config.mj.width || "250px";
+    img.style.borderRadius = config.mj.borderRadius || "16px";
+    img.classList.remove("hidden");
+  });
 }
     // Set texts from config
     document.getElementById('valentineTitle').textContent = `${config.valentineName}, my fiance...`;
