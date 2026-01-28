@@ -65,7 +65,7 @@ const CONFIG = {
     },
     mj: {
     enabled: true,
-    defaultSrc: "mj.jpg",
+    defaultSrc: null,
     finalSrc: "mj.jpg",
     alt: "MJ",
     width: "300px",
