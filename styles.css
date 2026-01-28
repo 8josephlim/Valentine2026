@@ -311,6 +311,11 @@ h2 {
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+.question-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
 
 .music-btn:hover {
     transform: scale(1.05);
