@@ -63,6 +63,14 @@ const CONFIG = {
         buttonHover: "#ff8787",          // Button hover color (slightly lighter than buttonBackground)
         textColor: "#ff4757"             // Text color (make sure it's readable!)
     },
+    mj: {
+    enabled: true,
+    defaultSrc: "mj.jpg",
+    finalSrc: "mj.jpg",
+    alt: "MJ",
+    width: "300px",
+    borderRadius: "20px"
+},
     image: {
         enabled: true,
         src: "charlie-valentine.jpg",
