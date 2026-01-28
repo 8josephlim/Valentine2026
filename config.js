@@ -63,20 +63,13 @@ const CONFIG = {
         buttonHover: "#ff8787",          // Button hover color (slightly lighter than buttonBackground)
         textColor: "#ff4757"             // Text color (make sure it's readable!)
     },
-    mj: {
-    enabled: true,
-    defaultSrc: null,
-    finalSrc: "mj.jpg",
-    alt: "MJ",
-    width: "300px",
-    borderRadius: "20px"
-},
-    image: {
-        enabled: true,
-        src: "charlie-valentine.jpg",
-        alt: "Valentine pup",
-        width: "300px",
-        borderRadius: "20px"
+  mj: {
+  enabled: true,
+  defaultSrc: "charlie-valentine.jpg",
+  finalSrc: "mj.jpg",
+  alt: "Valentine pic",
+  width: "300px",
+  borderRadius: "20px"
 },
     // Animation settings
     // Adjust these if you want faster/slower animations
