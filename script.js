@@ -57,7 +57,19 @@ document.title = config.pageTitle;
 window.addEventListener('DOMContentLoaded', () => {
     // Validate configuration first
     validateConfig();
-
+// Set question images if enabled
+if (config.image && config.image.enabled) {
+    [1, 2, 3].forEach(num => {
+        const img = document.getElementById(`questionImage${num}`);
+        if (img) {
+            img.src = config.image.src;
+            img.alt = config.image.alt || "";
+            img.style.width = config.image.width || "250px";
+            img.style.borderRadius = config.image.borderRadius || "16px";
+            img.classList.remove("hidden");
+        }
+    });
+}
     // Set texts from config
     document.getElementById('valentineTitle').textContent = `${config.valentineName}, my love...`;
     
