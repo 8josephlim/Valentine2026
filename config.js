@@ -51,7 +51,7 @@ const CONFIG = {
     celebration: {
         title: "Yay! Pack your bags, we're going on an adventure! 🎉💝💖💝💓",
         message: "My Valentine!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
+        emojis: "🌑💖💝💕💗🌑"  // These will bounce around
     },
 
     // Color scheme for the website
